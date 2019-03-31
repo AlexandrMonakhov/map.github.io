@@ -1,0 +1,53 @@
+/* Import _misc */
+@import '_misc/_colors';
+@import '_misc/_fonts';
+@import '_misc/_mixin';
+
+/* Base settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main styles */
+
+.footer {
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    &-form {
+        position: absolute;
+        top: 200px;
+        right: 200px;
+        background: blue;
+        padding: 50px;
+        > input {
+            width: 100%;
+        }
+        input {
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        textarea {
+            display: block;
+            margin-bottom: 20px;
+            width: 100%;
+            padding: 10px;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            background: green;
+            border: none;
+            color: #ffffff;
+            text-transform: uppercase;
+            padding: 20px 50px;
+            border-radius: 30px;
+        }
+    }
+}
